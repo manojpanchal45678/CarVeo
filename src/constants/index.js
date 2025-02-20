@@ -68,15 +68,6 @@ export const reviews = [
     totalReviews: 40,
   },
   {
-    name: "Mr. Keshav Nagar",
-    role: "Professional Racer",
-    avatar: keshav,
-    quote:
-      "Great selection of high-performance cars. The customer service is top-notch.",
-    rating: 5.0,
-    totalReviews: 60,
-  },
-  {
     name: "Mr. Arpit Mali",
     role: "Mahindra Lover",
     avatar: arpit,
@@ -93,6 +84,15 @@ export const reviews = [
       "Fantastic range of SUVs. I am very satisfied with my purchase and the overall experience.",
     rating: 4.8,
     totalReviews: 38,
+  },
+  {
+    name: "Mr. Keshav Nagar",
+    role: "Professional Racer",
+    avatar: keshav,
+    quote:
+      "Great selection of high-performance cars. The customer service is top-notch.",
+    rating: 5.0,
+    totalReviews: 60,
   },
   {
     name: "Mr. Naveen Kumbhkar",
