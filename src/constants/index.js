@@ -3,11 +3,16 @@ import { FaSearch, FaCalendarAlt, FaCar } from "react-icons/fa";
 import car01 from "../assets/car01.png";
 import car02 from "../assets/car02.png";
 import car03 from "../assets/car03.png";
-
-import user01 from "../assets/user01.png";
-import user02 from "../assets/user02.png";
-import user03 from "../assets/user03.png";
-import user04 from "../assets/user04.png";
+import car04 from "../assets/icon.png";
+import keshav from "../assets/keshav.jpg"
+import abhishek from "../assets/picture6.jpg";
+import arpit from "../assets/arpit.jpg";
+import ajay from "../assets/ajay.jpg";
+import aadarsh from "../assets/aadarsh.jpg";
+import kratik from "../assets/kratik.jpg";
+import naveen from "../assets/naveen.jpg";
+import arjun from "../assets/picture9.jpg";
+import rohan from "../assets/picture17.jpg";
 
 export const intro = {
   title: "Welcome to CarVeo",
@@ -40,63 +45,99 @@ export const carsInfo = [
     purpose: "renting",
     image: car03,
   },
+  {
+    "name": "Hyundai Creta",
+    "purpose": "car insurance",
+    "image": car02,
+},
+{
+    "name": "Ford Endeavour",
+    "purpose": "car repair",
+    "image": car04,
+},
 ];
 
 export const reviews = [
   {
-    name: "Emily Clark",
-    role: "Car Enthusiast",
-    avatar: user01,
+    name: "Mr. Kratik Khatri",
+    role: "Classic Car Collector",
+    avatar: kratik,
     quote:
-      "I found my dream car here! The process was seamless and the staff was very helpful.",
-    rating: 4.9,
-    totalReviews: 45,
+      "An amazing collection of classic cars. I found exactly what I was looking for.",
+    rating: 5.0,
+    totalReviews: 40,
   },
   {
-    name: "Michael Brown",
+    name: "Mr. Keshav Nagar",
     role: "Professional Racer",
-    avatar: user02,
+    avatar: keshav,
     quote:
       "Great selection of high-performance cars. The customer service is top-notch.",
     rating: 5.0,
     totalReviews: 60,
   },
   {
-    name: "Samantha Green",
-    role: "Mechanic",
-    avatar: user03,
+    name: "Mr. Arpit Mali",
+    role: "Mahindra Lover",
+    avatar: arpit,
     quote:
-      "Bought a car for my workshop. The quality is excellent and the price was reasonable.",
+      "Bought a car for my work. The quality is excellent and the price was reasonable.",
     rating: 4.7,
     totalReviews: 30,
   },
   {
-    name: "James Wilson",
+    name: "Mr. Aadarsh Singh Goud",
     role: "SUV Lover",
-    avatar: user04,
+    avatar: aadarsh,
     quote:
       "Fantastic range of SUVs. I am very satisfied with my purchase and the overall experience.",
     rating: 4.8,
     totalReviews: 38,
   },
   {
-    name: "Linda Johnson",
-    role: "Family Driver",
-    avatar: user03,
+    name: "Mr. Naveen Kumbhkar",
+    role: "Bussiness Man",
+    avatar: naveen,
     quote:
-      "The perfect place to find a family car. Safe, reliable, and affordable options.",
+      "An Professional Bussiness Man of classic cars. I found exactly what I was looking for.",
+    rating: 5.0,
+    totalReviews: 40,
+  },
+  {
+    name: "Mr. Ajay Yadav",
+    role: "Family Driver",
+    avatar: ajay,
+    quote:
+      "The perfect place to find a family car. Safe, reliable, and affordable options. At Carveo I'am Buying Wagon-R.",
     rating: 4.9,
     totalReviews: 52,
   },
   {
-    name: "Robert Davis",
-    role: "Classic Car Collector",
-    avatar: user02,
+    name: "Mr. Abhishek Sharma",
+    role: "Car Enthusiast",
+    avatar: abhishek,
     quote:
-      "An amazing collection of classic cars. I found exactly what I was looking for.",
-    rating: 5.0,
-    totalReviews: 40,
+      "I found my dream car here! The process was seamless and the staff was very helpful.",
+    rating: 4.9,
+    totalReviews: 45,
   },
+  {
+    name: "Mr. Arjun Malhotra",
+    role: "Luxury Car Collector",
+    avatar: arjun,
+    quote: "Amazing collection of luxury cars! The team helped me find the perfect one.",
+    rating: 5.0,
+    totalReviews: 60
+},
+{
+  name: "Mr. Rohan Mehta",
+  role: "Tech Enthusiast",
+  avatar: rohan,
+  quote: "Absolutely love my new electric car! Great mileage and eco-friendly.",
+  rating: 5.0,
+  totalReviews: 28
+},
+
 ];
 
 export const steps = [

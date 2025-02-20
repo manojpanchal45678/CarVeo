@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../../UI/Container'
 import { footer } from '../../constants'
 import Credits from './Credits'
+import FAQs from './FAQs'
 const Footer = () => {
   return (
     <footer className='bg-slate-600 p-5 dark:bg-slate-800 dark:text-gray-300 md:p-16'>
@@ -36,6 +37,7 @@ const Footer = () => {
             </div>
 
         </div>
+        <FAQs />
         <Credits />
       </Container>
     </footer>

@@ -3,6 +3,7 @@ import { sliderData } from "../../constants/Data";
 import { motion } from "framer-motion";
 import { FaAngleDoubleLeft,FaAngleDoubleRight } from 'react-icons/fa'
 //import { FaMoneyBillWave } from "react-icons/fa";
+import moneyLogo from "/src/assets/Mlogo.png";
 const CarCard = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -17,7 +18,7 @@ const CarCard = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center px-4 min-h-screen bg-slate-50 dark:bg-slate-700">
+    <div className="flex flex-col justify-center items-center px-4 py-10 bg-slate-50 dark:bg-slate-700">
         <motion.div className="flex flex-col items-center"
         initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -41,17 +42,17 @@ const CarCard = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-auto max-h-[600px] sm:max-h-[500px] md:max-h-[500px] lg:max-h-[550px]  border-gray-700 dark:border-gray-50 rounded-md object-cover transition-transform duration-700"
+                className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[550px] lg:max-h-[600px] border-gray-700 dark:border-gray-50 rounded-md object-cover transition-transform duration-700"
               />
               {index === currentIndex && (
-                <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-opacity-50 text-white p-4 rounded-lg w-[80%] text-center">
-                  <h2 className="h-15 w-60 rounded-md bg-opacity-50 bg-slate-700 text-3xl text-slate-100 dark:text-slate-900 dark:bg-slate-100 font-bold">{item.title}</h2>
-                  <p className="mt-4 font-bold text-1xl text-slate-100 dark:text-slate-50">{item.description}</p>
-                  <div className=" flex text-center justify-center h-[40px] w-[240px] text-lg font-bold text-slate-50 dark:text-slate-950 bg-gray-800 bg-opacity-50 dark:bg-slate-200 rounded-lg">
+                <div className="absolute bottom-5 sm:bottom-10 left-1/2 transform -translate-x-1/2 p-2 sm:p-4 rounded-lg w-[90%] text-center">
+                  <h2 className="flex justify-center items-center h-2 w-20 sm:h-12 sm:w-60 sm:text-[18px] rounded-sm sm:rounded-md bg-opacity-50 bg-slate-700 text-[5px] border-gray-900 border-2 sm:text-2xl text-slate-100 dark:text-slate-900 dark:bg-slate-100 font-bold text-center">{item.title}</h2>
+                  <p className="mt-4 font-bold text-slate-100 dark:text-slate-900 text-[8px] text-end sm:text-end [text-shadow:_-1px_-1px_0_black,_1px_-1px_0_black,_-1px_1px_0_black,_1px_1px_0_black] dark:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] sm:text-xl">{item.description}</p>
+                  <div className=" flex justify-center text-center items-center h-[10px] w-[80px]  sm:h-[35px] sm:w-[210px] text-[5px] sm:text-[15px] font-bold text-slate-50 dark:text-slate-950 bg-gray-800 bg-opacity-50 dark:bg-slate-200 rounded-sm sm:rounded-lg border-2 border-gray-900">
                   {/* <FaMoneyBillWave className="text-green-700 dark:text-green-900 mr-2 flex items-center justify-center mt-1" /> */}
-                  <img src="/src/assets/Mlogo.png" alt="" className="pb-1 h-12 w-12 "/>
-                    <p className="mt-2">Price-</p>
-                    <p className="ml-2 mt-2">{item.price}</p>
+                  <img src={moneyLogo} alt="" className="sm:h-12 sm:w-12 h-[15xp] w-[15px] "/>
+                    <p className="">Price-</p>
+                    <p className="ml-2">{item.price}</p>
                   </div>
                 </div>
               )}
