@@ -21,12 +21,12 @@ export const intro = {
 };
 
 export const menuItems = [
-  { name: "Home", href: "../Components/Header/Header.jsx" },
-  { name: "Services", href: "./Components/Services/Service.jsx" },
-  { name: "About", href: "#about" },
-  { name: "Team", href: "../Components/Reviews/Reviews.jsx" },
-  { name: "FAQs", href: "#faqs" },
-  { name: "Contact", href: "../Components/Footer/Credits.jsx" },
+  { name: "Home", href: "#Home" },
+  { name: "Services", href: "#Services" },
+  { name: "About", href: "#About" },
+  { name: "Team", href: "#Team" },
+  { name: "FAQs", href: "#FAQs" },
+  { name: "Contact", href: "#Contact"},
 ];
 
 export const carsInfo = [
@@ -167,7 +167,7 @@ export const steps = [
 ];
 
 export const footer = {
-  title: "CarVista",
+  title: "CarVeo",
   slogan: "See the Road Ahead",
   description:
     " CarVista offers the best selection of cars to help you find the perfect ride for your needs. Whether you're looking for a family car, a high-performance vehicle, or a classic collectible, we've got you covered.",
