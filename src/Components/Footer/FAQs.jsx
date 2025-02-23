@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const faqs = [
-  { question: "Who is the Owner of Carveo?", answer: "The Onwer Of CarVeo is Mr. Manoj Panchal." },
+  { question: "Who is the Owner of Carveo?", answer: "The Onwer Of Carveo is Mr. Manoj Panchal." },
   { question: "How does car insurance work?", answer: "Car insurance provides financial protection against physical damage and bodily injury resulting from accidents. You can choose from various coverage options based on your needs." },
   { question: "How can I secure my car?", answer: "To secure your car, always park in well-lit areas, install an anti-theft system, and use a steering lock for extra safety." },
   { question: "What documents are required to buy a car?", answer: "You typically need identity proof, address proof, income proof, and a valid driver's license." },
