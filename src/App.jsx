@@ -16,7 +16,7 @@ const App = () => {
     setDarkMode((prev) => !prev);
   };
   return (
-    <div className={`${darkMode && "dark"} font-josfin`}>
+    <div className={`${darkMode && "dark"} overflow-x-hidden font-josfin`}>
    <Header handleDarkMode={handleDarkMode} darkMode={darkMode}/>
   <Hero darkMode={darkMode}/>
   <Service />
