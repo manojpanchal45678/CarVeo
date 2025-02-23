@@ -13,6 +13,8 @@ import kratik from "../assets/kratik.jpg";
 import naveen from "../assets/naveen.jpg";
 import arjun from "../assets/picture9.jpg";
 import rohan from "../assets/picture17.jpg";
+import aman from "../assets/Aman.jpg";
+import madhu from "../assets/madhu.jpg";
 
 export const intro = {
   title: "Welcome to CarVeo",
@@ -58,6 +60,15 @@ export const carsInfo = [
 ];
 
 export const reviews = [
+  
+  {
+    name: "Mr. Aman Sharma",
+    role: "Luxury Car Dealer",
+    avatar: aman,
+    quote: "A phenomenal collection of classic cars. Every ride tells a story.",
+    rating: 4.8,
+    totalReviews: 35,
+  },
   {
     name: "Mr. Kratik Khatri",
     role: "Classic Car Collector",
@@ -77,6 +88,14 @@ export const reviews = [
     totalReviews: 30,
   },
   {
+    name: "Mr. Madhusudhan Narwadiya",
+    role: "Automobile Engineer",
+    avatar: madhu,  // Replace with actual avatar reference
+    quote: "An exquisite collection that resonates with passion and precision.",
+    rating: 4.9,
+    totalReviews: 42,
+  },
+  {
     name: "Mr. Aadarsh Singh Goud",
     role: "SUV Lover",
     avatar: aadarsh,
@@ -94,6 +113,7 @@ export const reviews = [
     rating: 5.0,
     totalReviews: 60,
   },
+
   {
     name: "Mr. Naveen Kumbhkar",
     role: "Bussiness Man",

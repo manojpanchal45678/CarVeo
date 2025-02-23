@@ -28,7 +28,7 @@ const CarCard = () => {
           <div className='border-b-2 border-red-500 p-4 w-60'></div>
           <p className="text-2xl bg-slate-50 dark:bg-slate-700 text-slate-700 dark:text-slate-200 mt-5">We are providing a wide range of varities of cars, check out.</p>
         </motion.div>
-      <div className="mt-7 mb-7 rounded-2xl relative w-full max-w-[1000px] h-auto sm:h-[500px] md:h-[550px] lg:h-[640px] bg-slate-300 dark:bg-slate-800 shadow-2xl overflow-hidden flex items-center">
+      <div className="mt-7 mb-7 rounded-2xl relative w-full max-w-[1000px] h-auto sm:h-[500px] md:h-[550px] lg:h-[640px] bg-slate-50 dark:bg-slate-700 overflow-hidden flex items-center">
            
         <div
           className="flex transition-transform duration-700 ease-in-out w-full h-full"
@@ -37,20 +37,19 @@ const CarCard = () => {
           {sliderData.map((item, index) => (
             <div
               key={index}
-              className="w-full h-full flex-shrink-0 relative flex justify-center items-center"
+              className="w-full h-full flex-shrink-0 relative flex justify-center items-center object-cover overflow-hidden"
             >
               <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[550px] lg:max-h-[600px] border-gray-700 dark:border-gray-50 rounded-md object-cover transition-transform duration-700"
+                src={item.image} 
+                alt={item.title}  
+                className="w-full h-auto max-h-[400px] overflow-z-hidden sm:max-h-full md:max-h-[550px] lg:max-h-[600px] border-gray-700 dark:border-gray-50 rounded-md  transition-transform duration-500 border-2 "
               />
               {index === currentIndex && (
                 <div className="absolute bottom-5 sm:bottom-10 left-1/2 transform -translate-x-1/2 p-2 sm:p-4 rounded-lg w-[90%] text-center">
-                  <h2 className="flex justify-center items-center h-2 w-20 sm:h-12 sm:w-60 sm:text-[18px] rounded-sm sm:rounded-md bg-opacity-50 bg-slate-700 text-[5px] border-gray-900 border-2 sm:text-2xl text-slate-100 dark:text-slate-900 dark:bg-slate-100 font-bold text-center">{item.title}</h2>
+                  <h2 className="flex justify-center items-center h-3 w-[60px] sm:h-12 sm:w-60 sm:text-[18px] rounded-sm sm:rounded-md dark:bg-opacity-50 bg-opacity-50 bg-slate-700 text-[5px] border-gray-900 border-[0.5px] sm:text-2xl text-slate-100 dark:text-slate-900 dark:bg-slate-100 font-bold text-center">{item.title}</h2>
                   <p className="mt-4 font-bold text-slate-100 dark:text-slate-900 text-[8px] text-end sm:text-end [text-shadow:_-1px_-1px_0_black,_1px_-1px_0_black,_-1px_1px_0_black,_1px_1px_0_black] dark:[text-shadow:_-1px_-1px_0_white,_1px_-1px_0_white,_-1px_1px_0_white,_1px_1px_0_white] sm:text-xl">{item.description}</p>
-                  <div className=" flex justify-center text-center items-center h-[10px] w-[80px]  sm:h-[35px] sm:w-[210px] text-[5px] sm:text-[15px] font-bold text-slate-50 dark:text-slate-950 bg-gray-800 bg-opacity-50 dark:bg-slate-200 rounded-sm sm:rounded-lg border-2 border-gray-900">
-                  {/* <FaMoneyBillWave className="text-green-700 dark:text-green-900 mr-2 flex items-center justify-center mt-1" /> */}
-                  <img src={moneyLogo} alt="" className="sm:h-12 sm:w-12 h-[15xp] w-[15px] "/>
+                  <div className=" flex justify-center text-center items-center h-[10px] w-[70px]  sm:h-[35px] sm:w-[210px] text-[5px] sm:text-[15px] font-bold text-slate-50 dark:text-slate-950 bg-gray-800 bg-opacity-50 dark:bg-slate-200 rounded-sm sm:rounded-lg border-[0.5px] border-gray-900">
+                  <img src={moneyLogo} alt="" className="sm:h-12 sm:w-12 h-[13xp] w-[13px] "/>
                     <p className="">Price-</p>
                     <p className="ml-2">{item.price}</p>
                   </div>
